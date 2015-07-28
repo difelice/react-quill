@@ -69,6 +69,11 @@ var QuillToolbar = React.createClass({
 		className: T.string,
 		items:     T.array
 	},
+	
+	statics: {
+		defaultItems: defaultItems,
+		defaultColors: defaultColors
+	},
 
 	getDefaultProps: function(){
 		return {
@@ -146,5 +151,3 @@ var QuillToolbar = React.createClass({
 });
 
 module.exports = QuillToolbar;
-QuillToolbar.defaultItems = defaultItems;
-QuillToolbar.defaultColors = defaultColors;
